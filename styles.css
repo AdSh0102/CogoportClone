@@ -111,7 +111,7 @@ body {
 
 #closeButton {
   position: relative;
-  left: 300px;
+  right: 0px;
   background: transparent;
   border: transparent;
   height: 50px;
@@ -222,11 +222,6 @@ body {
   align-items: center;
   overflow: hidden;
   flex: 1 1;
-}
-
-#container3text {
-  z-index: 1;
-  position: absolute;
 }
 
 #cont3left {
@@ -651,7 +646,7 @@ body {
 }
 
 #container10 {
-  height: 250px;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -687,6 +682,8 @@ body {
   flex: 1 1;
   background-color: #ffffff;
   margin: 100px;
+  margin-right:0;
+  margin-left:0;
 }
 
 #container11 h1 {
@@ -1013,4 +1010,206 @@ body {
   --font-size-sm: 12px;
   --font-size-xs: 10px;
   --line-height: 1.5;
+}
+
+.spBt{
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px)
+{
+	#container1{
+		width: 100%;
+	}
+	#container2 a{
+		position: relative;
+		right: 170px;
+	}
+	.cont2box{
+		display: none;
+	}
+	#cont2login{
+		display: none;
+	}
+	#container3{
+		flex-direction: column;
+		/* background-color: #36bb22; */
+	}
+	#cont3left{
+		order: 2;
+	}
+	#container3 video{
+		order: 1;
+		top: 0;
+		height: 400px;
+		left: 0;
+  		width: 100%;
+	}
+	#cont3left h1 {
+		font-size: 24px;
+	  }
+	#cont3left p {
+		font-size: 16px;
+	}
+	#container4{
+		flex-direction: column;
+	}
+	#container5{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	#container5 img{
+		order: -1;
+		width: 100%;
+	}
+	#container5 div{
+		position: relative;
+		left: -40px;
+	}
+	#container5 h1{
+		font-size: 24px;
+	}
+	#container6{
+		overflow: auto;
+		height: fit-content;
+	}
+	#container6 div{
+		flex-direction: column;
+	}
+	#container6 h1{
+		font-size: 16px;
+	}
+	#topC6{
+		font-size: 20px!important;
+	}
+	#container7{
+		height: initial;
+	}
+	#container8{
+		height: fit-content;
+	}
+	#container8{
+		flex-direction: column;
+	}
+	#container9 .lines{
+		display: none;
+	}
+	.mid{
+		width: 280px;
+		height: auto;	
+		margin-top: 500px;
+		position: static !important; 
+		top: auto !important;
+		left: auto !important; 
+		right: auto !important; 
+		bottom: auto !important;
+	} 
+	.sw{
+		flex-direction: column;
+	}
+	.boxes{
+		position: static !important; 
+		top: auto !important;
+		left: auto !important; 
+		right: auto !important; 
+		bottom: auto !important;
+	}
+	#comp{
+		display: flex;
+		flex-direction: column;
+	}
+	#container9{
+		margin-bottom: 600px;
+		height: fit-content;
+	}
+	.imgContainer10{
+		flex-direction: column;
+		align-items: center;
+	}
+	#container11{
+		flex-direction: column;
+		align-items:  center;
+	}
+	#container11 img{
+		order: -1;
+	}
+	#container11 h1{
+		font-size: 24px;
+	}
+	#container11 div{
+		display: flex;
+		flex-direction: column;
+	}
+	#container11 button{
+		align-self: center;
+		width: 90%;
+	}
+	#container13{
+		flex-direction: column;
+		height: fit-content;
+	}
+	#container13 div{
+		margin-left: 5px;
+		flex-direction: column;
+		justify-items: auto!important;
+	}
+	#container13 h1{
+		font-size: 20px;
+	}
+	#container14{
+		height: fit-content;
+	}
+	.cardContainer{
+		flex-direction: column;
+		align-items: center;
+		width: 100px;
+	}
+	.card{
+		height: max-content;
+	}
+	.fst{
+		height: 50px;
+	}
+	.snd img{
+		display: none !important;
+	}
+	.tempC15{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.tempC15 h1{
+		font-size: 20px;
+	}
+	.tempC15 span{
+		overflow-wrap: break-word;
+	}
+	#container16{
+		flex-direction: column;
+		height: fit-content;
+	}
+	#container16 span{
+		display: none!important;
+	}
+	#container16 strong{
+		display: none!important;
+	}
+	#container16 br{
+		display: none!important;
+	}
+	#container16 div{
+		border: 1px solid #000;
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		margin:0;
+		text-decoration: initial;
+	}
+	#container17{
+		display: none !important;
+	}
+	.vanish{
+		display: none !important;
+	}
 }
